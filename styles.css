@@ -1,0 +1,167 @@
+/* Base Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8;
+    color: #333;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .site-header {
+    background: linear-gradient(135deg, #1a237e, #3949ab);
+    color: #fff;
+    padding: 1.2em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  .site-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-list li {
+    margin: 0 1.5em;
+    position: relative;
+  }
+  .nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  .nav-list li a:hover,
+  .nav-list li a.active {
+    color: #ffca28;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #3949ab;
+    padding: 0.5em 0;
+    border-radius: 4px;
+    min-width: 150px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .dropdown-menu li {
+    margin: 0;
+  }
+  .dropdown-menu li a {
+    display: block;
+    padding: 0.5em 1em;
+    color: #fff;
+  }
+  .dropdown-menu li a:hover,
+  .dropdown-menu li a.active {
+    background: #1a237e;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 2em 0;
+  }
+  .intro {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .intro h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #1a237e;
+  }
+  .intro p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  /* Features (Card Layout) */
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 2em;
+  }
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    flex: 1 1 300px;
+    max-width: 400px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  .card h3 {
+    color: #1a237e;
+    margin-top: 0;
+  }
+  .card p {
+    line-height: 1.6;
+    margin: 1em 0;
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background: #1a237e;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  .btn:hover {
+    background: #3949ab;
+  }
+  
+  /* Article Styles */
+  article {
+    margin-bottom: 2em;
+  }
+  article h2 {
+    border-bottom: 2px solid #1a237e;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+  }
+  article p {
+    line-height: 1.6;
+  }
+  
+  /* News Articles */
+  .news-article {
+    background: #fff;
+    padding: 1.5em;
+    border-left: 4px solid #1a237e;
+    margin-bottom: 1.5em;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  .news-article h3 {
+    margin-top: 0;
+    color: #1a237e;
+  }
+  
